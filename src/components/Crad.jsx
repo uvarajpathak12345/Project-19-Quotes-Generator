@@ -116,6 +116,7 @@ export default function Crad() {
         const data = await response.json();
         setval(data); // Set the fetched data
         setError(null); // Clear any previous error
+
       } catch (err) {
         setError(err.message); // Set error if the fetch fails
       } finally {
@@ -186,18 +187,6 @@ export default function Crad() {
             </div>
           )}
 
-          {/* {suggestion.length > 0 && (
-            <>
-              <div className="search-data">
-                <ul>
-                  {suggestion.map((value, index) => {
-                    <li key={index} onClick={() => {setinput(value)}}>
-                      {value}</li>;
-                  })}
-                </ul>
-              </div>
-            </>
-          )} */}
         </div>
       </form>
 
