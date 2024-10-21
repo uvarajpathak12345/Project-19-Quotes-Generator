@@ -175,7 +175,6 @@ export default function Crad() {
                       key={index}
                       onClick={() => {
                         setinput(value);
-                        fetchdata();
                         setsuggestionbox(false);
                       }}
                     >
