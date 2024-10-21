@@ -1,0 +1,71 @@
+:root {
+  --background: white;
+  --color: black;
+}
+
+input {
+  border: black 1px solid;
+  border-radius: 0.75rem;
+  width: 18rem;
+}
+.containers {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 12rem;
+}
+.input-box {
+  max-width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.icon {
+  font-size: 30px;
+  
+}
+.containers h2{
+    font: bolder;
+}
+ line{
+    border:2px red solid;
+    background-color: red;
+    width: 12rem;
+    height: 2vh;
+ }
+ button{
+  position: absolute;
+  right: 0;
+ }
+.search-data{
+  max-width: fit-content;
+  position: absolute;
+  /* when position is absolute we can use inset 0 and margin auto to centre it */
+  inset: 0; 
+  margin: auto;
+
+  top:18.5rem;
+
+}
+.search-data ul li{
+  background-color: blueviolet;
+  width: 17rem;
+  border-radius: 4px;
+  margin: 2px 6px;
+  align-items: center;
+  text-align: center;
+  padding: 0.4rem 0.5rem;
+  color: white;
+
+}
+@media only screen and (max-width: 600px) {
+  .containers{
+    width: 20rem;
+  }
+}
